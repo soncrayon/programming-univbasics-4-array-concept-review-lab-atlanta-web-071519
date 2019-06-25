@@ -15,7 +15,7 @@ end
 
 def find_max_value(array)
   i = 0 
-  high_number = 0 
+  high_number = array[i] 
   while array[i] do
     if array[i] >= high_number  
       high_number = array[i]
@@ -26,5 +26,13 @@ def find_max_value(array)
 end
 
 def find_min_value(array)
-  # Add your solution here
+  i = 0 
+  low_number = array[i]
+  while array[i] do 
+    if array[i] <= low_number
+      low_number = array[i]
+    end
+    i = i + 1 
+  end 
+  return low_number 
 end
