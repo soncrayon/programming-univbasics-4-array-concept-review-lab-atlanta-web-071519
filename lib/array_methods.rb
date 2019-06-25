@@ -9,6 +9,8 @@ def find_element_index(array, value_to_find)
   end
   if found_number
   return array.index(found_number) 
+  else
+  return found_number
 end
 
 def find_max_value(array)
